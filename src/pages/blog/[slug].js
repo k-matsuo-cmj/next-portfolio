@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import matter from "gray-matter"
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from 'react-markdown'
 import Layout from "../../components/layout"
 import * as style from "../../styles/singleBlog.module.scss"
 
@@ -8,9 +8,7 @@ const SingleBlog = (props) => {
   return (
     <Layout>
       <div className={style.hero}>
-        <Image src={props.frontmatter.image} alt="blog-image"
-          height={500} width={1000}
-        />
+        <Image src={props.frontmatter.image} alt="blog-image" height="500" width="1000" />
       </div>
       <div className={style.wrapper}>
         <div className={style.container}>
