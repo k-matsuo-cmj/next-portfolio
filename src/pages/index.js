@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import * as style from "../styles/index.module.css"
+import Layout from "../components/layout"
+import * as style from "../styles/index.module.scss"
 
 const Index = () => {
   return (
-    <>
+    <Layout>
       <div className={style.hero}>
         <Image src="/images/index-hero.jpg" alt="hero"
           layout="fill" objectFit="cover" quality={90}
@@ -37,7 +38,7 @@ const Index = () => {
           <Link href="/contact"><a>Make It Happen!</a></Link>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 
